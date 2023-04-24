@@ -35,6 +35,7 @@
 - [ ] length
 - [ ] create
 - [ ] destroy
+- [ ] destroy data
 - [ ] insert front
 - [ ] insert end
 - [ ] insert at
@@ -49,6 +50,7 @@
 - [ ] length
 - [ ] create
 - [ ] destroy
+- [ ] destroy data
 - [ ] insert front
 - [ ] insert end
 - [ ] insert at
