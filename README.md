@@ -1,5 +1,9 @@
 # x308 Linked List Library
 
+<!-- TODO add some sort of description here -->
+
+---
+
 ## Implementation status
 
 ### `x308-libisll`: integer singly linked list
