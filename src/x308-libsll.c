@@ -55,7 +55,7 @@ sll_t sll_last(sll_t sll) {
 }
 
 sll_t sll_create(void* data) {
-    sll_t sll = malloc(sizeof(sll_t));
+    sll_t sll = malloc(sizeof(struct sll_node));
     sll->data = data;
     sll->next = NULL;
     return sll;
