@@ -10,6 +10,7 @@ struct sll_node
     struct sll_node* next;
 };
 
+// UNTESTED
 void sll_destroy(sll_t sll, void (*destroy)(void*)) {
     if(!sll->next) {
         (*destroy)(sll->data);
@@ -22,6 +23,7 @@ void sll_destroy(sll_t sll, void (*destroy)(void*)) {
     free(sll);
 }
 
+// UNTESTED
 void sll_print(sll_t sll, int (*print)(void*)) {
     while (sll) {
         (*print)(sll->data);
