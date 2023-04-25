@@ -36,18 +36,18 @@
 
 ### `x308-libsll`: generic pointer singly linked list
 
-- [ ] length
-- [ ] create
-- [ ] destroy
-- [ ] destroy data
-- [ ] insert front
-- [ ] insert end
-- [ ] insert at
-- [ ] value at
+- [x] length
+- [x] create
+- [x] destroy
+- [x] destroy data
+- [x] insert front
+- [x] insert end
+- [x] insert at
+- [x] value at
 - [ ] remove front
 - [ ] remove end
 - [ ] remove at
-- [ ] print
+- [x] print
 
 ### `x308-libdll`: generic pointer doubly linked list
 
