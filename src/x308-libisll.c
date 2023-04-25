@@ -54,7 +54,7 @@ isll_t isll_last(isll_t isll) {
 }
 
 isll_t isll_create(int val) {
-    isll_t isll = malloc(sizeof(isll_t));
+    isll_t isll = malloc(sizeof(struct isll_node));
     isll->val = val;
     isll->next = NULL;
     return isll;
