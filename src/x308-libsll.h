@@ -20,6 +20,6 @@ typedef struct sll_node* sll_t;
 
 // extern sll_t sll_insert_end(sll_t, int);
 
-extern void sll_destroy(sll_t);
+extern void sll_destroy(sll_t, void* (*f)(void*));
 
-extern void sll_print(sll_t);
+extern void sll_print(sll_t, int (*f)(void*));
