@@ -4,19 +4,16 @@
 #include <stddef.h>
 #include <stdio.h>
 
-// UNTESTED
 struct sll_node
 {
     void* data;
     struct sll_node* next;
 };
 
-// UNTESTED
-int sll_node_data(sll_t sll) {
+void* sll_node_data(sll_t sll) {
     return sll->data;
 }
 
-// UNTESTED
 int sll_len(sll_t sll) {
     if (!sll) {
         return -1;
@@ -49,7 +46,6 @@ sll_t sll_get(sll_t sll, int index) {
     return sll;
 }
 
-// UNTESTED
 sll_t sll_last(sll_t sll) {
     while ((sll->next)) {
         sll = sll->next;
@@ -58,7 +54,6 @@ sll_t sll_last(sll_t sll) {
     return sll;
 }
 
-// UNTESTED
 sll_t sll_create(void* data) {
     sll_t sll = malloc(sizeof(sll_t));
     sll->data = data;
@@ -66,14 +61,12 @@ sll_t sll_create(void* data) {
     return sll;
 }
 
-// UNTESTED
 sll_t sll_insert_front(sll_t sll, void* data){
     sll_t new_head = sll_create(data);
     new_head->next = sll;
     return new_head;
 }
 
-// UNTESTED
 sll_t sll_insert_end(sll_t sll, void* data){
     sll_t curr_last = sll_last(sll);
     sll_t new_last = sll_create(data);
@@ -100,7 +93,7 @@ sll_t sll_insert_at(sll_t sll, void* data, int index) {
 
 // TODO add remove methods
 
-// UNTESTED
+
 void sll_destroy(sll_t sll, void (*destroy)(void*)) {
     if(!sll->next) {
         (*destroy)(sll->data);
@@ -113,7 +106,6 @@ void sll_destroy(sll_t sll, void (*destroy)(void*)) {
     free(sll);
 }
 
-// UNTESTED
 void sll_print(sll_t sll, int (*print)(void*)) {
     while (sll) {
         (*print)(sll->data);

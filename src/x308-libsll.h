@@ -6,7 +6,7 @@
 
 typedef struct sll_node* sll_t;
 
-extern int sll_node_val(sll_t);
+extern void* sll_node_data(sll_t);
 
 extern int sll_len(sll_t);
 

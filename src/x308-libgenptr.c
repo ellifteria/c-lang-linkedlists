@@ -1,25 +1,29 @@
 #include "x308-libgenptr.h"
 
-// #include <stdlib.h>
+#include <stdlib.h>
 // #include <stddef.h>
 #include <stdio.h>
 
-// UNTESTED
-int print_str(char* str) {
-    printf("%s", str);
+int print_str(void* str) {
+    printf("%s", (char*)str);
     return 0;
 }
 
-// UNTESTED
-int print_int(int i) {
-    printf("%d", i);
+int print_int(void* i) {
+    printf("%d", *((int*) i));
     return 0;
 }
 
-// UNTESTED
-int print_float(float f) {
-    printf("%f", f);
+int print_float(void* f) {
+    printf("%f", *((float*) f));
     return 0;
 }
 
 // TODO add delete functions to free things
+
+void do_nothing_void_ptr(void* i) {}
+
+// UNTESTED
+void free_ptr(void* ptr) {
+    free( (char*)ptr);
+}
